@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-daniele';
+  title = 'Gestione visite';
+  sezione = 'pazienti';
+
+  changeSection(sezioneSelezionata: string) {
+    this.sezione = sezioneSelezionata;
+  }
 }

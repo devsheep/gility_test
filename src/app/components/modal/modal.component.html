@@ -1,0 +1,36 @@
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">{{ codiceFiscale }}</h5>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modalRef.close()"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="descrizione">Descrizione visita</label>
+                <input type="text" [(ngModel)]="descrizione" id="descrizione" class="form-control" name="descrizione">
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label class="active" for="dateStandard">Scegli una data</label>
+                <input [(ngModel)]="data" type="date" id="dateStandard" name="dateStandard" style="margin-left:20px;">
+            </div>
+        </div>
+    </div>
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="close()">
+      Chiudi
+    </button>
+    <button type="button" class="btn btn-primary" (click)="salva()">Salva</button>
+  </div>

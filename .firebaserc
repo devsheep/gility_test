@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gestione-visite": {
+      "hosting": {
+        "angular-daniele": [
+          "gestione-visite"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gestione-visite"
+  }
+}

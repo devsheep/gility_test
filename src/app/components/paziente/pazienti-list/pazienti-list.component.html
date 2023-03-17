@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success" (click)="creaPaziente()">Nuovo paziente</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-paziente-item *ngFor="let pazienteItem of pazienti" [paziente]="pazienteItem" [codiceFiscale]="pazienteItem.codiceFiscale"></app-paziente-item>
+    </div>
+</div>

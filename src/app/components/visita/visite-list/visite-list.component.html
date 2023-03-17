@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-10">
+        <hr>
+        <ul class="list-group">
+            <table class="table table-striped">
+                <thead class="thead-light">
+                     <th>N. Visita</th>
+                     <th>Descrizione</th>
+                     <th>Data svolgimento</th>
+                     <th>Esito</th>
+                     <th>Paziente</th>
+                </thead>
+                <tbody>
+                   <tr *ngFor="let visita of visite">
+                        <td>{{ visita.numeroVisita }}</td>
+                        <td>{{ visita.descrizione }}</td>
+                        <td>{{ visita.dataSvolgimento | date }}</td>
+                        <td>{{ visita.esito }}</td>
+                        <td>{{ visita.codiceFiscale }}</td>
+                        <td><button type="button" class="btn-close" aria-label="Close" (click)="deleteVisita(visita.numeroVisita)"></button></td>
+                   </tr>
+                </tbody>
+           </table>
+        </ul>
+    </div>
+</div>
